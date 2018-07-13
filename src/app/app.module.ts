@@ -3,14 +3,42 @@ import { NgModule } from '@angular/core';
 
 
 import { AppComponent } from './app.component';
+import { HomeComponent } from './pages/home/home.component';
+
+import { TypingAnimationDirective } from 'angular-typing-animation'
+import { AppRoutingModule } from './app-routing.module';
+
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
+import { HttpModule } from '@angular/http';
+import { HomepageComponent } from './pages/homepage/homepage.component';
+import { NavComponent } from './pages/nav/nav.component';
+
+
+
+
+
+
+
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HomeComponent,
+    TypingAnimationDirective,
+    HomepageComponent,
+    NavComponent,
+
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    HttpModule,
+    BrowserAnimationsModule,
+
+
   ],
   providers: [],
   bootstrap: [AppComponent]
